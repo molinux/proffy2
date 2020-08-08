@@ -1,4 +1,10 @@
 {
+  "name": "proffy2",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "commit": "yarn git-cz"
+  },
   "devDependencies": {
     "commitizen": "^4.1.2",
     "cz-conventional-changelog": "3.2.0"
