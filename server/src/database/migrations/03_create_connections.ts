@@ -12,7 +12,7 @@ export async function up(knex: Knex) {
       .onUpdate('CASCADE'); // Se o id do usuário for alterado, atualiza também na tabela connections
 
       table.timestamp('created_at')
-        .defaultTo('now()')
+        .defaultTo(knex.raw('CURRENT_TIMESTAMP'))
         .notNullable();
   });
 }
